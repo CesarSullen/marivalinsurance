@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>Marival Insurance</title>
+	</head>
+	<nav class="navbar">
+		<img src="images/Marival-Insurance.png" class="navbar-icon" />
+
+		<button id="toggleBtn" class="toggle-btn">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+
+		<ul class="navbar-links">
+			<li>
+				<a href="#Start" class="navbar-link">
+					<img src="images/icons/home-icon.svg" class="link-icon" />
+					<p>Start</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Blog" class="navbar-link">
+					<img src="images/icons/blog-icon.svg" class="link-icon" />
+					<p>Blog</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Videos" class="navbar-link">
+					<img src="images/icons/video-icon.svg" class="link-icon" />
+					<p>Videos</p>
+				</a>
+			</li>
+			<li>
+				<a href="#AboutUs" class="navbar-link">
+					<img src="images/icons/about-icon.svg" class="link-icon" />
+					<p>About Us</p>
+				</a>
+			</li>
+			<li>
+				<a href="#Contact" class="navbar-link">
+					<img src="images/icons/contact-icon.svg" class="link-icon" />
+					<p>Contact</p>
+				</a>
+			</li>
+			<a href="">
+				<button class="btn">Subscribe</button>
+			</a>
+		</ul>
+	</nav>
+	<ul id="sideBar" class="sidebar">
+		<li>
+			<a href="#Start" class="sidebar-link">
+				<img src="/images/icons/home-icon.svg" class="link-icon" />
+				<p>Start</p>
+			</a>
+		</li>
+		<li>
+			<a href="#Blog" class="sidebar-link">
+				<img src="/images/icons/blog-icon.svg" class="link-icon" />
+				<p>Blog</p>
+			</a>
+		</li>
+		<li>
+			<a href="#Videos" class="sidebar-link">
+				<img src="/images/icons/video-icon.svg" class="link-icon" />
+				<p>Videos</p>
+			</a>
+		</li>
+		<li>
+			<a href="#AboutUs" class="sidebar-link">
+				<img src="/images/icons/about-icon.svg" class="link-icon" />
+				<p>About Us</p>
+			</a>
+		</li>
+		<li>
+			<a href="#Contact" class="sidebar-link">
+				<img src="/images/icons/contact-icon.svg" class="link-icon" />
+				<p>Contact</p>
+			</a>
+		</li>
+
+		<hr />
+
+		<div id="subscribeForm" class="subscribe-form">
+			<h5 class="form-title">Subscribe to our Newsletter</h5>
+			<input
+				type="text"
+				name="userName"
+				id="userName"
+				placeholder="Your name"
+			/>
+			<input
+				type="email"
+				name="userEmail"
+				id="userEmail"
+				placeholder="Your E-mail"
+			/>
+			<input type="submit" value="Subscribe" class="btn" />
+		</div>
+	</ul>
+
+	<body>
+		<div class="hero-section">
+			<img src="images/hero4.jpg" class="hero-img" />
+			<div class="hero-content">
+				<a href="#"><button class="btn">Contact now</button></a>
+			</div>
+		</div>
+		<div class="body-container">
+			<div class="section welcome-section">
+				<h1 class="section-title">
+					<div class="optional-text">Welcome to</div>
+					<span class="important-text">Marival Insurance</span>
+				</h1>
+
+				<div class="section-content">
+					<p>
+						Welcome to the virtual office of Marival Insurance, your free
+						consulting agency for life insurance that pays benefits in life and
+						health insurance with comprehensive coverage. Here you can read news
+						related to Obamacare and private health insurance. As well as news
+						on supplementary plans against accidents, hospitalizations, and
+						illnesses. You can also, read on dental coverage and other related
+						news to life insurance that pays in life, and that allows you to
+						obtain tax-free savings for your retirement.
+					</p>
+					<p>
+						Our range of services includes people with immigration status in
+						order and also those who have not yet been able to obtain it. You
+						can receive a free quote if you leave us your contact information.
+					</p>
+					<p>
+						It is a privilege for us to help you find the best protection for
+						your family. That is why we have also devised a chat system that
+						allows you to clarify doubts in real-time with one of our
+						specialists. Our preferred contact is through the phone:
+						<span class="important-text bold"> (786)607-3194</span>, since it
+						allows us to establish empathy and reinforce the understanding of
+						your needs.
+					</p>
+				</div>
+			</div>
+
+			<div class="section free-quote-section">
+				<h2 class="section-title">
+					Free <span class="important-text">Quote</span>
+				</h2>
+				<form class="free-quote">
+					<input
+						type="text"
+						name="userName"
+						id="userName"
+						placeholder="First Name & Last Name"
+						class="free-quote-input"
+					/>
+					<input
+						type="email"
+						name="userEmail"
+						id="userEmail"
+						placeholder="E-mail"
+						class="free-quote-input"
+					/>
+					<input
+						type="tel"
+						name="userPhone"
+						id="userPhone"
+						placeholder="Telephone"
+						class="free-quote-input"
+					/>
+					<select
+						name="userInsurance"
+						id="userInsurance"
+						class="free-quote-input"
+					>
+						<option value="healthInsurance" selected="selected">
+							Health Insurance
+						</option>
+						<option value="lifeInsurance">Life Insurance</option>
+						<option value="savingPlans">Saving Plans</option>
+						<option value="discountPlans">Discount Plans</option>
+						<option value="obamacare">Obamacare</option>
+					</select>
+					<input
+						type="text"
+						name="userMessage"
+						id="userMessage"
+						placeholder="Message"
+						class="free-quote-input"
+					/>
+					<input
+						type="text"
+						name="captcha"
+						id="captcha"
+						placeholder="Captcha"
+						class="free-quote-input"
+					/>
+					<input type="submit" value="Quote Now" class="btn ghost-btn" />
+				</form>
+			</div>
+
+			<div class="section services-section">
+				<h2 class="section-title">
+					Our <span class="important-text">Services</span>
+				</h2>
+				<div class="section-content">
+					<div class="card">
+						<h3 class="card-title">Health Insurance</h3>
+
+						<div class="card-content">
+							<p>
+								In the United States, the health system is private, which is why
+								insurance is required to cover people for them to face expensive
+								hospital debts.
+							</p>
+							<p class="hidden">
+								Marival Insurance works with the Health Insurance Market, an
+								entity that provides the low-income population with a subsidy to
+								help them pay monthly premiums and make copays affordable to
+								their pocket. All medical insurances obtained through the
+								Market, obviate the pre-existing medical conditions that clients
+								may suffer. There is no discrimination to provide insurance to
+								anyone.
+							</p>
+							<div id="toggleVisibility" class="btn ghost-btn">
+								More Details
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<h3 class="card-title">Life Insurance</h3>
+
+						<div class="card-content">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+							<button class="btn ghost-btn">
+								<a href="#">More Details</a>
+							</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<h3 class="card-title">Saving Plans</h3>
+
+						<div class="card-content">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+							<button class="btn ghost-btn">
+								<a href="#">More Details</a>
+							</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<h3 class="card-title">Discount Plans</h3>
+
+						<div class="card-content">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+							<button class="btn ghost-btn">
+								<a href="#">More Details</a>
+							</button>
+						</div>
+					</div>
+
+					<div class="card">
+						<h3 class="card-title">Obamacare</h3>
+
+						<div class="card-content">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+							<button class="btn ghost-btn">
+								<a href="#">More Details</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section videos-section">
+				<h2 class="section-title">
+					About <span class="important-text">Us</span>
+				</h2>
+				<div class="section-content">
+					<video
+						src="https://i.ytimg.com/vi_webp/EmoO0bphlPg/sddefault.webp"
+					></video>
+					<button class="btn"><a href="#">Our Videos</a></button>
+					<button class="btn"><a href="#">Our Blog</a></button>
+					<button class="btn"><a href="#">Reviews</a></button>
+				</div>
+			</div>
+
+			<div class="section faq-section">
+				<h2 class="section-title">FAQ</h2>
+				<div class="section-content accordion">
+					<div class="accordion-item section">
+						<div class="accordion-header">
+							<h4 class="accordion-title">Question 1</h4>
+							<img src="images/icons/arrow-icon.svg" class="accordion-toggle" />
+						</div>
+						<div class="accordion-content">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Doloremque, excepturi at. Ducimus quam tempora, tempore culpa
+							aliquid saepe, quae corrupti cupiditate nam, quia quisquam cumque
+							eaque minima voluptatibus dolorem aperiam.
+						</div>
+					</div>
+					<hr />
+					<div class="accordion-item section">
+						<div class="accordion-header">
+							<h4 class="accordion-title">Question 2</h4>
+							<img src="images/icons/arrow-icon.svg" class="accordion-toggle" />
+						</div>
+						<div class="accordion-content">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Doloremque, excepturi at. Ducimus quam tempora, tempore culpa
+							aliquid saepe, quae corrupti cupiditate nam, quia quisquam cumque
+							eaque minima voluptatibus dolorem aperiam.
+						</div>
+					</div>
+					<hr />
+					<div class="accordion-item section">
+						<div class="accordion-header">
+							<h4 class="accordion-title">Question 3</h4>
+							<img src="images/icons/arrow-icon.svg" class="accordion-toggle" />
+						</div>
+						<div class="accordion-content">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Doloremque, excepturi at. Ducimus quam tempora, tempore culpa
+							aliquid saepe, quae corrupti cupiditate nam, quia quisquam cumque
+							eaque minima voluptatibus dolorem aperiam.
+						</div>
+					</div>
+					<hr />
+					<div class="accordion-item section">
+						<div class="accordion-header">
+							<h4 class="accordion-title">Pregunta 4</h4>
+							<img src="images/icons/arrow-icon.svg" class="accordion-toggle" />
+						</div>
+						<div class="accordion-content">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Doloremque, excepturi at. Ducimus quam tempora, tempore culpa
+							aliquid saepe, quae corrupti cupiditate nam, quia quisquam cumque
+							eaque minima voluptatibus dolorem aperiam.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<footer class="footer">
+		<div class="contact-options">
+			<a
+				href="https://maps.app.goo.gl/6uRCHYXEgMcNe5eh8"
+				class="contact-option"
+			>
+				<img src="images/icons/address-icon.svg" class="contact-icon" />
+				<p>8880 SW 8 St #442756. Miami, Fl. 33144</p>
+			</a>
+			<a href="mailto:mariela@marivalinsurance.com" class="contact-option">
+				<img src="images/icons/mail-icon.svg" class="contact-icon" />
+				<p>mariela@marivalinsurance.com</p>
+			</a>
+			<a href="tel:+17866073194" class="contact-option">
+				<img src="images/icons/phone-icon.svg" class="contact-icon" />
+				<p>(786) 607-3194</p>
+			</a>
+		</div>
+
+		<hr />
+
+		<div class="social-links">
+			<a href=""
+				><img src="images/icons/instagram.svg" class="social-icon"
+			/></a>
+			<a href=""><img src="images/icons/facebook.svg" class="social-icon" /></a>
+			<a href=""><img src="images/icons/twitter.svg" class="social-icon" /></a>
+			<a href=""><img src="images/icons/linkedin.svg" class="social-icon" /></a>
+		</div>
+	</footer>
+	<script src="./js/app.js"></script>
+</html>
