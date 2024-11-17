@@ -25,6 +25,10 @@
   color: #3636f0;
 }
 
+.important-text-2 {
+  color: #07004d;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -41,7 +45,7 @@ hr {
   background-color: #edf2ef;
   width: 100%;
   height: 1px;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .body-container {
@@ -60,7 +64,7 @@ hr {
 
 .btn {
   padding: 0.5rem 1rem;
-  border-radius: 8px;
+  border-radius: 3px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -73,7 +77,7 @@ hr {
   color: #edf2ef;
 }
 .btn:hover {
-  box-shadow: 0 0 10px 1px #3636f0;
+  opacity: 0.9;
 }
 .btn:active {
   transform: scale(0.9);
@@ -91,6 +95,7 @@ hr {
   background-color: #3636f0;
   color: #edf2ef;
   box-shadow: none;
+  opacity: 1;
 }
 .ghost-btn:hover a {
   color: #edf2ef;
@@ -98,6 +103,10 @@ hr {
 
 .warning-text {
   color: red;
+}
+
+body {
+  background-color: #edf2ef;
 }
 
 .navbar {
@@ -126,15 +135,15 @@ hr {
   display: flex;
   position: fixed;
   width: 70%;
-  height: 91%;
+  height: 95%;
   overflow-y: auto;
   transform: translateX(-200%);
   padding: 1rem;
   background: linear-gradient(to bottom, #07004d, #3636f0);
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   text-transform: uppercase;
-  border-radius: 0 0 10px 0;
   letter-spacing: 3px;
 }
 
@@ -188,11 +197,12 @@ hr {
   color: #edf2ef;
 }
 .subscribe-form input {
-  padding: 0.3rem;
-  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 3px;
 }
 .subscribe-form .btn {
   background: #07004d;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -222,9 +232,9 @@ hr {
 }
 
 .free-quote {
-  background-color: rgb(235.5193548387, 240.9306451613, 237.6838709677);
+  background-color: #ddd9e7;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -233,8 +243,8 @@ hr {
 .free-quote .free-quote-input {
   background: transparent;
   padding: 0.5rem;
-  border: solid 2px #5e6973;
-  border-radius: 5px;
+  border: solid 2px #364156;
+  border-radius: 3px;
   width: 100%;
   max-width: 400px;
 }
@@ -253,7 +263,7 @@ hr {
 
 .card {
   border: solid 2px #3636f0;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -280,9 +290,6 @@ hr {
 }
 
 .videos-section .section-content {
-  background-color: #07004d;
-  border-radius: 10px;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,7 +299,7 @@ hr {
   max-width: 400px;
   width: 100%;
   border: solid 2px #3636f0;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .accordion {
@@ -353,7 +360,7 @@ hr {
   flex-direction: column;
   font-size: 0.8rem;
   align-items: center;
-  gap: 0.5rem;
+  gap: 10px;
 }
 
 .contact-option {
@@ -374,9 +381,22 @@ hr {
   gap: 5px;
 }
 
+.social-link p {
+  display: none;
+}
+
 .social-icon {
   width: 30px;
   height: 30px;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-img img {
+  width: 70%;
 }
 
 @media screen and (min-width: 700px) {
@@ -399,7 +419,7 @@ hr {
   .navbar-link {
     display: flex;
     gap: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
   }
   .navbar-link:hover {
     background-color: #3636f0;
@@ -420,6 +440,7 @@ hr {
     left: 15%;
     width: 100%;
     max-width: 1000px;
+    display: none;
   }
   .welcome-section {
     grid-column: span 2;
@@ -434,6 +455,10 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+  .free-quote {
+    padding: 0;
+    background-color: #edf2ef;
   }
   .videos-section {
     grid-column: 2;
@@ -462,8 +487,34 @@ hr {
     background-color: #07004d;
     color: #edf2ef;
   }
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer hr {
+    display: none;
+  }
   .footer .contact-options {
     align-items: flex-start;
+    justify-content: space-around;
+    font-size: 1rem;
+    gap: 2px;
+  }
+  .footer .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .social-link {
+    display: flex;
+    align-items: center;
+    color: #edf2ef;
+    gap: 5px;
+  }
+  .footer .social-link p {
+    display: flex;
+  }
+  .footer .footer-img img {
+    width: 90%;
   }
 }
 

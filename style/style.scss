@@ -24,15 +24,15 @@
 	display: flex;
 	position: fixed;
 	width: 70%;
-	height: 91%;
+	height: 95%;
 	overflow-y: auto;
 	transform: translateX(-200%);
 	padding: 1rem;
 	background: linear-gradient(to bottom, $secondary-color, $primary-color);
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 	text-transform: uppercase;
-	border-radius: 0 0 10px 0;
 	letter-spacing: 3px;
 }
 .sidebar-link {
@@ -45,6 +45,7 @@
 		color: $bg-color;
 	}
 }
+
 .link-icon {
 	width: 20px;
 }
@@ -89,11 +90,12 @@
 		color: $bg-color;
 	}
 	input {
-		padding: 0.3rem;
-		border-radius: 5px;
+		padding: 0.5rem;
+		border-radius: $border-radius-general;
 	}
 	.btn {
 		background: $secondary-color;
+		text-transform: uppercase;
 	}
 }
 
@@ -127,9 +129,9 @@
 	}
 }
 .free-quote {
-	background-color: darken($color: $bg-color, $amount: 0.5);
+	background-color: #ddd9e7;
 	padding: 1rem;
-	border-radius: 10px;
+	border-radius: $border-radius-general;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -138,8 +140,8 @@
 	.free-quote-input {
 		background: transparent;
 		padding: 0.5rem;
-		border: solid 2px #5e6973;
-		border-radius: 5px;
+		border: solid 2px #364156;
+		border-radius: $border-radius-general;
 		width: 100%;
 		max-width: 400px;
 
@@ -161,7 +163,7 @@
 }
 .card {
 	border: solid 2px $primary-color;
-	border-radius: 10px;
+	border-radius: $border-radius-general;
 	padding: 1rem;
 	margin-bottom: 1rem;
 
@@ -191,9 +193,6 @@
 // Video Section
 .videos-section {
 	.section-content {
-		background-color: $secondary-color;
-		border-radius: 10px;
-		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -203,14 +202,14 @@
 		max-width: 400px;
 		width: 100%;
 		border: solid 2px $primary-color;
-		border-radius: 5px;
+		border-radius: $border-radius-general;
 	}
 }
 
 // FAQ
 .accordion {
 	width: 100%;
-	border-radius: 3px;
+	border-radius: $border-radius-general;
 	border: solid 1.5px $primary-color;
 
 	hr {
@@ -267,7 +266,7 @@
 	flex-direction: column;
 	font-size: 0.8rem;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 10px;
 }
 .contact-option {
 	display: flex;
@@ -285,9 +284,23 @@
 	justify-content: center;
 	gap: 5px;
 }
+.social-link {
+	p {
+		display: none;
+	}
+}
 .social-icon {
 	width: 30px;
 	height: 30px;
+}
+.footer-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 70%;
+	}
 }
 
 @media screen and (min-width: 700px) {
@@ -311,7 +324,7 @@
 	.navbar-link {
 		display: flex;
 		gap: 10px;
-		border-radius: 5px;
+		border-radius: $border-radius-general;
 
 		&:hover {
 			background-color: $primary-color;
@@ -334,6 +347,7 @@
 		left: 15%;
 		width: 100%;
 		max-width: 1000px;
+		display: none;
 	}
 
 	.welcome-section {
@@ -350,6 +364,10 @@
 			grid-template-columns: 1fr 1fr;
 			gap: 1rem;
 		}
+	}
+	.free-quote {
+		padding: 0;
+		background-color: $bg-color;
 	}
 	.videos-section {
 		grid-column: 2;
@@ -373,7 +391,7 @@
 		}
 		.accordion-item {
 			border: solid 1.5px $primary-color;
-			border-radius: 3px;
+			border-radius: $border-radius-general;
 			&:hover {
 				background-color: $secondary-color;
 				color: $bg-color;
@@ -382,8 +400,35 @@
 	}
 
 	.footer {
+		flex-direction: row;
+		justify-content: space-around;
+		hr {
+			display: none;
+		}
 		.contact-options {
 			align-items: flex-start;
+			justify-content: space-around;
+			font-size: 1rem;
+			gap: 2px;
+		}
+		.social-links {
+			flex-direction: column;
+			gap: 10px;
+		}
+		.social-link {
+			display: flex;
+			align-items: center;
+			color: $bg-color;
+			gap: 5px;
+
+			p {
+				display: flex;
+			}
+		}
+		.footer-img {
+			img {
+				width: 90%;
+			}
 		}
 	}
 }
