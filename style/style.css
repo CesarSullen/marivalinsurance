@@ -69,7 +69,6 @@ hr {
   font-weight: bold;
   cursor: pointer;
   width: 100%;
-  max-width: 400px;
   background-color: #3636f0;
   color: #edf2ef;
 }
@@ -208,6 +207,8 @@ body {
 .section-title {
   color: #07004d;
   letter-spacing: 3px;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
 }
 
 .hero-section .hero-img {
@@ -246,7 +247,6 @@ body {
   border: solid 2px #364156;
   border-radius: 3px;
   width: 100%;
-  max-width: 400px;
 }
 .free-quote .free-quote-input:focus {
   border-color: #3636f0;
@@ -262,16 +262,22 @@ body {
 }
 
 .card {
-  border: solid 2px #3636f0;
-  border-radius: 3px;
+  background-color: #3636f0;
+  border-radius: 10px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  color: #edf2ef;
 }
 .card:first-child {
   grid-column: span 2;
 }
 .card:first-child .btn {
-  align-self: auto;
+  max-width: none;
+  color: #edf2ef;
+}
+.card:first-child .btn:hover {
+  background-color: #edf2ef;
+  color: #3636f0;
 }
 .card .card-content {
   display: flex;
@@ -283,10 +289,21 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   align-self: center;
+  border: #edf2ef solid 2px;
+}
+.card .btn a {
+  color: #edf2ef;
+}
+.card .btn:hover {
+  background-color: #edf2ef;
+}
+.card .btn:hover a {
+  color: #3636f0;
 }
 
 .card-title {
-  color: #07004d;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .videos-section .section-content {
@@ -296,7 +313,6 @@ body {
   gap: 10px;
 }
 .videos-section video {
-  max-width: 400px;
   width: 100%;
   border: solid 2px #3636f0;
   border-radius: 3px;
@@ -348,7 +364,7 @@ body {
 
 .footer {
   background-color: #07004d;
-  padding: 1rem;
+  padding: 2rem;
   color: #edf2ef;
   display: flex;
   flex-direction: column;
@@ -417,13 +433,14 @@ body {
     color: #edf2ef;
   }
   .navbar-link {
+    padding: 0.5rem;
+    padding-inline: 1rem;
     display: flex;
     gap: 10px;
-    border-radius: 3px;
+    border-radius: 100vh;
   }
   .navbar-link:hover {
     background-color: #3636f0;
-    padding: 0.2rem;
   }
   .body-container {
     display: grid;
@@ -482,10 +499,6 @@ body {
   .faq-section .accordion-item {
     border: solid 1.5px #3636f0;
     border-radius: 3px;
-  }
-  .faq-section .accordion-item:hover {
-    background-color: #07004d;
-    color: #edf2ef;
   }
   .footer {
     flex-direction: row;

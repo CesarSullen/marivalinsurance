@@ -103,6 +103,8 @@
 .section-title {
 	color: $secondary-color;
 	letter-spacing: 3px;
+	margin-bottom: 0.8rem;
+	text-transform: uppercase;
 }
 .hero-section {
 	.hero-img {
@@ -143,7 +145,6 @@
 		border: solid 2px #364156;
 		border-radius: $border-radius-general;
 		width: 100%;
-		max-width: 400px;
 
 		&:focus {
 			border-color: $primary-color;
@@ -162,16 +163,23 @@
 	flex-direction: column;
 }
 .card {
-	border: solid 2px $primary-color;
-	border-radius: $border-radius-general;
+	background-color: $primary-color;
+	border-radius: 10px;
 	padding: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
+	color: $bg-color;
 
 	&:first-child {
 		grid-column: span 2;
 
 		.btn {
-			align-self: auto;
+			max-width: none;
+			color: $bg-color;
+
+			&:hover {
+				background-color: $bg-color;
+				color: $primary-color;
+			}
 		}
 	}
 	.card-content {
@@ -184,10 +192,24 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		align-self: center;
+		border: $bg-color solid 2px;
+
+		a {
+			color: $bg-color;
+		}
+
+		&:hover {
+			background-color: $bg-color;
+
+			a {
+				color: $primary-color;
+			}
+		}
 	}
 }
 .card-title {
-	color: $secondary-color;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 // Video Section
@@ -199,7 +221,6 @@
 		gap: 10px;
 	}
 	video {
-		max-width: 400px;
 		width: 100%;
 		border: solid 2px $primary-color;
 		border-radius: $border-radius-general;
@@ -255,7 +276,7 @@
 // Footer
 .footer {
 	background-color: $secondary-color;
-	padding: 1rem;
+	padding: 2rem;
 	color: $bg-color;
 	display: flex;
 	flex-direction: column;
@@ -322,13 +343,15 @@
 		}
 	}
 	.navbar-link {
+		padding: 0.5rem;
+		padding-inline: 1rem;
+
 		display: flex;
 		gap: 10px;
-		border-radius: $border-radius-general;
+		border-radius: 100vh;
 
 		&:hover {
 			background-color: $primary-color;
-			padding: 0.2rem;
 		}
 	}
 
@@ -392,10 +415,6 @@
 		.accordion-item {
 			border: solid 1.5px $primary-color;
 			border-radius: $border-radius-general;
-			&:hover {
-				background-color: $secondary-color;
-				color: $bg-color;
-			}
 		}
 	}
 
