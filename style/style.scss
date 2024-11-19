@@ -126,9 +126,6 @@
 		flex-direction: column;
 		gap: 20px;
 	}
-	.optional-text {
-		display: none;
-	}
 }
 .free-quote {
 	background-color: #ddd9e7;
@@ -220,7 +217,7 @@
 		align-items: center;
 		gap: 10px;
 	}
-	video {
+	.video {
 		width: 100%;
 		border: solid 2px $primary-color;
 		border-radius: $border-radius-general;
@@ -297,8 +294,8 @@
 	color: $bg-color;
 }
 .contact-icon {
-	width: 20px;
-	height: 20px;
+	width: 25px;
+	height: 25px;
 }
 .social-links {
 	display: flex;
@@ -341,6 +338,10 @@
 		p {
 			color: $bg-color;
 		}
+		.btn {
+			border-radius: 100vh;
+			text-transform: uppercase;
+		}
 	}
 	.navbar-link {
 		padding: 0.5rem;
@@ -375,8 +376,8 @@
 
 	.welcome-section {
 		grid-column: span 2;
-		.optional-text {
-			display: flex;
+		.section-title {
+			font-size: 3rem;
 		}
 	}
 	.services-section {

@@ -228,9 +228,6 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-.welcome-section .optional-text {
-  display: none;
-}
 
 .free-quote {
   background-color: #ddd9e7;
@@ -312,7 +309,7 @@ body {
   align-items: center;
   gap: 10px;
 }
-.videos-section video {
+.videos-section .video {
   width: 100%;
   border: solid 2px #3636f0;
   border-radius: 3px;
@@ -387,8 +384,8 @@ body {
 }
 
 .contact-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .social-links {
@@ -432,6 +429,10 @@ body {
   .navbar-links p {
     color: #edf2ef;
   }
+  .navbar-links .btn {
+    border-radius: 100vh;
+    text-transform: uppercase;
+  }
   .navbar-link {
     padding: 0.5rem;
     padding-inline: 1rem;
@@ -462,8 +463,8 @@ body {
   .welcome-section {
     grid-column: span 2;
   }
-  .welcome-section .optional-text {
-    display: flex;
+  .welcome-section .section-title {
+    font-size: 3rem;
   }
   .services-section {
     grid-column: span 2;
