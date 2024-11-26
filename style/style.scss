@@ -9,7 +9,7 @@
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
-	top: 0;
+	top: 0px;
 	width: 100%;
 	z-index: 1000;
 }
@@ -23,7 +23,7 @@
 .sidebar {
 	display: flex;
 	position: fixed;
-	width: 100%;
+	width: 80%;
 	height: 95%;
 	overflow-y: auto;
 	transform: translateX(-200%);
@@ -34,6 +34,7 @@
 	align-items: center;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	z-index: 1000;
 }
 .sidebar-link {
 	display: flex;
@@ -138,7 +139,7 @@
 	}
 }
 .free-quote {
-	background-color: #ddfeff;
+	background-color: #dceced;
 	padding: 1rem;
 	border-radius: $border-radius-general;
 	display: flex;
@@ -149,7 +150,7 @@
 	.free-quote-input {
 		background: transparent;
 		padding: 0.5rem;
-		border: solid 2px #364156;
+		border: solid 1px #364156;
 		border-radius: $border-radius-general;
 		width: 100%;
 
@@ -170,8 +171,8 @@
 	flex-direction: column;
 }
 .card {
-	background: linear-gradient(to bottom, rgb(127, 204, 255), $primary-color);
 	border-radius: 10px;
+	border: solid 1px $primary-color;
 	padding: 1rem;
 	margin-bottom: 0.5rem;
 	display: flex;
@@ -182,12 +183,6 @@
 
 		.btn {
 			max-width: none;
-			color: $bg-color;
-
-			&:hover {
-				background-color: $bg-color;
-				color: $primary-color;
-			}
 		}
 	}
 	.card-content {
@@ -202,17 +197,19 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		align-self: center;
-		border: $bg-color solid 2px;
+		color: $primary-color;
+		border: solid 1px $primary-color;
 
 		a {
-			color: $bg-color;
+			color: $primary-color;
 		}
 
 		&:hover {
-			background-color: $bg-color;
+			background-color: $primary-color;
+			color: $bg-color;
 
 			a {
-				color: $primary-color;
+				color: $bg-color;
 			}
 		}
 	}
@@ -220,6 +217,7 @@
 .card-title {
 	text-transform: uppercase;
 	text-align: center;
+	color: $secondary-color;
 }
 
 // Video Section
@@ -234,6 +232,38 @@
 		width: 100%;
 		border: solid 2px $primary-color;
 		border-radius: $border-radius-general;
+	}
+}
+// CTA Section
+.cta-section {
+	/* background: linear-gradient(
+		to right bottom,
+		$secondary-color,
+		$primary-color
+	); */
+	padding: 1rem;
+	border-radius: $border-radius-general + 5px;
+	background-color: $secondary-color;
+
+	.section-title {
+		color: $bg-color;
+	}
+	.section-content {
+		color: $bg-color;
+		font-size: 1.1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.cta-link {
+		text-align: right;
+		text-transform: uppercase;
+
+		h3 {
+			color: $bg-color;
+		}
+		h2 {
+			color: #10a7a4;
+		}
 	}
 }
 
@@ -325,13 +355,7 @@
 	height: 30px;
 }
 .footer-img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	img {
-		width: 70%;
-	}
+	margin-bottom: 10px;
 }
 
 @media screen and (min-width: 700px) {
@@ -399,6 +423,8 @@
 	.free-quote {
 		padding: 0;
 		background-color: $bg-color;
+		height: 100%;
+		justify-content: space-around;
 	}
 	.videos-section {
 		grid-column: 2;
@@ -406,6 +432,18 @@
 
 		.section-content {
 			gap: 8px;
+		}
+	}
+	.cta-section {
+		grid-column: span 2;
+		.section-title {
+			font-size: 1.8rem;
+		}
+		.section-content {
+			font-size: 1.3rem;
+		}
+		.position-left {
+			max-width: 600px;
 		}
 	}
 	.faq-section {
@@ -450,11 +488,6 @@
 
 			p {
 				display: flex;
-			}
-		}
-		.footer-img {
-			img {
-				width: 90%;
 			}
 		}
 	}

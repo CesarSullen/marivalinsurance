@@ -26,7 +26,7 @@
 
 // Colors
 $bg-color: #edf2ef;
-$primary-color: #2098a0;
+$primary-color: #3636f0;
 $secondary-color: #052b5c;
 
 $border-radius-general: 3px;
@@ -108,4 +108,5 @@ hr {
 }
 body {
 	background-color: $bg-color;
+	overflow-x: hidden;
 }
