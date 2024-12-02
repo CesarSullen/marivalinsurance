@@ -109,16 +109,6 @@ body {
   overflow-x: hidden;
 }
 
-.separator {
-  grid-column: span 2;
-  display: flex;
-  justify-content: center;
-}
-
-.separator-img {
-  max-width: 350px;
-}
-
 .auto-rotate {
   animation: autoRotateAnimation;
   animation-timeline: view();
@@ -295,6 +285,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+}
+
+.separator-img {
+  width: 200px;
 }
 
 .free-quote {
@@ -565,6 +564,12 @@ body {
   }
   .welcome-section {
     grid-column: span 2;
+  }
+  .separator {
+    grid-column: span 2;
+  }
+  .separator-img {
+    width: 350px;
   }
   .services-section {
     grid-column: span 2;

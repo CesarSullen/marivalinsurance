@@ -110,11 +110,3 @@ body {
 	background-color: $bg-color;
 	overflow-x: hidden;
 }
-.separator {
-	grid-column: span 2;
-	display: flex;
-	justify-content: center;
-}
-.separator-img {
-	max-width: 350px;
-}

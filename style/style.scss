@@ -139,6 +139,13 @@
 		gap: 20px;
 	}
 }
+.separator {
+	display: flex;
+	justify-content: center;
+}
+.separator-img {
+	width: 200px;
+}
 .free-quote {
 	background-color: #dceced;
 	padding: 1rem;
@@ -424,6 +431,12 @@
 	}
 	.welcome-section {
 		grid-column: span 2;
+	}
+	.separator {
+		grid-column: span 2;
+	}
+	.separator-img {
+		width: 350px;
 	}
 	.services-section {
 		grid-column: span 2;
