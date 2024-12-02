@@ -393,7 +393,7 @@ body {
   border-radius: 8px;
   background-color: #052b5c;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .cta-section .bg-icon {
   position: absolute;
