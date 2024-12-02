@@ -1,4 +1,5 @@
 @import "_reset";
+@import "_animations";
 
 // Nav Bar
 .navbar {
@@ -441,7 +442,7 @@
 	}
 	.videos-section {
 		grid-column: 2;
-		grid-row: 2;
+		grid-row: 3;
 
 		.section-content {
 			gap: 8px;

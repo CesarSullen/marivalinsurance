@@ -109,6 +109,60 @@ body {
   overflow-x: hidden;
 }
 
+.separator {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.separator-img {
+  max-width: 350px;
+}
+
+.auto-rotate {
+  animation: autoRotateAnimation;
+  animation-timeline: view();
+}
+
+.auto-show {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+
+.auto-blur {
+  animation: autoBlurAnimation linear;
+  animation-timeline: view();
+}
+
+@keyframes autoRotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+@keyframes autoBlurAnimation {
+  0% {
+    filter: blur(40px);
+  }
+  35%, 55% {
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
 .navbar {
   background-color: #052b5c;
   padding-block: 0.5rem;
@@ -528,7 +582,7 @@ body {
   }
   .videos-section {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
   }
   .videos-section .section-content {
     gap: 8px;
