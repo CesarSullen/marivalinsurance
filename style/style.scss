@@ -253,6 +253,7 @@
 	border-radius: $border-radius-general + 5px;
 	background-color: $secondary-color;
 	position: relative;
+	overflow-x: hidden;
 
 	.bg-icon {
 		position: absolute;
