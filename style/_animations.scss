@@ -1,22 +1,6 @@
-.auto-rotate {
-	animation: autoRotateAnimation;
-	animation-timeline: view();
-}
 .auto-show {
 	animation: autoShowAnimation both;
 	animation-timeline: view(70% 5%);
-}
-.auto-blur {
-	animation: autoBlurAnimation linear;
-	animation-timeline: view();
-}
-@keyframes autoRotateAnimation {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
 }
 @keyframes autoShowAnimation {
 	from {
@@ -26,17 +10,5 @@
 	to {
 		opacity: 1;
 		transform: translateY(0px) scale(1);
-	}
-}
-@keyframes autoBlurAnimation {
-	0% {
-		filter: blur(40px);
-	}
-	35%,
-	55% {
-		filter: blur(0);
-	}
-	100% {
-		filter: blur(40px);
 	}
 }

@@ -109,29 +109,11 @@ body {
   overflow-x: hidden;
 }
 
-.auto-rotate {
-  animation: autoRotateAnimation;
-  animation-timeline: view();
-}
-
 .auto-show {
   animation: autoShowAnimation both;
   animation-timeline: view(70% 5%);
 }
 
-.auto-blur {
-  animation: autoBlurAnimation linear;
-  animation-timeline: view();
-}
-
-@keyframes autoRotateAnimation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 @keyframes autoShowAnimation {
   from {
     opacity: 0;
@@ -140,17 +122,6 @@ body {
   to {
     opacity: 1;
     transform: translateY(0px) scale(1);
-  }
-}
-@keyframes autoBlurAnimation {
-  0% {
-    filter: blur(40px);
-  }
-  35%, 55% {
-    filter: blur(0);
-  }
-  100% {
-    filter: blur(40px);
   }
 }
 .navbar {
@@ -285,15 +256,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.separator {
-  display: flex;
-  justify-content: center;
-}
-
-.separator-img {
-  width: 200px;
 }
 
 .free-quote {
@@ -565,12 +527,6 @@ body {
   }
   .welcome-section {
     grid-column: span 2;
-  }
-  .separator {
-    grid-column: span 2;
-  }
-  .separator-img {
-    width: 350px;
   }
   .services-section {
     grid-column: span 2;
