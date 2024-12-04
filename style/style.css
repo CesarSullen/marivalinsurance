@@ -376,9 +376,10 @@ body {
   flex-direction: column;
 }
 .cta-section .cta-link {
-  text-align: right;
-  text-transform: uppercase;
   z-index: 2;
+}
+.cta-section .cta-link p {
+  color: #edf2ef;
 }
 .cta-section .cta-link h3 {
   color: #edf2ef;
@@ -506,9 +507,6 @@ body {
     display: flex;
     gap: 10px;
     border-radius: 100vh;
-    /* &:hover {
-    	background-color: $primary-color;
-    } */
   }
   .body-container {
     display: grid;
@@ -561,8 +559,11 @@ body {
   .cta-section .section-content {
     font-size: 1.3rem;
   }
-  .cta-section .position-left {
+  .cta-section .align-left {
     max-width: 600px;
+  }
+  .cta-section .align-right {
+    text-align: right;
   }
   .faq-section {
     grid-column: span 2;
